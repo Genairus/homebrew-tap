@@ -7,16 +7,16 @@ class Chronos < Formula
   on_macos do
     # Single ARM binary for all macOS — Intel Macs run it via Rosetta 2 (macOS 11+).
     url "https://github.com/Genairus/chronos/releases/download/v0.2.0/chronos-macos-aarch64.tar.gz"
-    sha256 "b52066007870bb440f3be8c327394d371f1fb1afacdb9bd7090e47aab3f41bfb"
+    sha256 "ea19a6cb08337adeba3981ea61811af3c6e41a492fcb72ea85e6d2799b786044"
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Genairus/chronos/releases/download/v0.2.0/chronos-linux-aarch64.tar.gz"
-      sha256 "54ce4250a6ab50d31872d569ae5863c0794eb8524f72252a35e2608c44544588"
+      sha256 "76c4cfb818a8884a2b0cda1dad9884eeafe7dfc34de1de03392952c99837a0c0"
     else
       url "https://github.com/Genairus/chronos/releases/download/v0.2.0/chronos-linux-x86_64.tar.gz"
-      sha256 "316dff8d9c46200c0b5c20fd83afd55d6296d2383113e5c5c56cf23461d89ed6"
+      sha256 "859edaf0036964a87a89afc700980b0af625f91dee84abf23d7af95e393df3e0"
     end
   end
 
